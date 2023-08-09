@@ -94,6 +94,9 @@
     <!-- Custom styles for this template -->
     <link href="headers.css" rel="stylesheet">
     <link href="carousel.css" rel="stylesheet">
+    <link href="service.css" rel="stylesheet">
+
+
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -273,7 +276,7 @@
                             </a>
                         </li>
                     </ul>
-                </div> 
+                </div>
             </div>
         </div>
     </header>
@@ -283,8 +286,8 @@
         <section class="py-2 text-center container">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Service</li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Service</li>
                 </ol>
             </nav>
             <div class="row mt-5 py-5">
@@ -301,7 +304,7 @@
                 <div style="border-left: #0bd 2px solid;">
                     <!--観察-->
 
-                    <h1  class="ms-3">観察</h1>
+                    <h1 class="ms-3">観察</h1>
                     <p class="mb-5 ms-3">Observations</p>
                 </div>
 
@@ -318,7 +321,13 @@
                             <div class="card-body">
                                 <h4 class="card-text">走査型電子顕微鏡</h4>
                                 <p class="card-text">JSM-6060：日本電子<br>用途：固体試料の表面形態観察<br>　</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <!--signinしてたら予約画面へ、していなければsignin画面へ-->
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='signin.html'"
+                                        value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary"
+                                        onclick="location.href='detail.html'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -334,7 +343,12 @@
                             <div class="card-body">
                                 <h4 class="card-text">3Dデジタルファインスコープ</h4>
                                 <p class="card-text">VC-7700：オムロン<br>用途：最大倍率3500倍の光学顕微鏡で、3D画像に合成することができる</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'"
+                                        value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary"
+                                        onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -350,7 +364,12 @@
                             <div class="card-body">
                                 <h4 class="card-text">高精細デジタルマイクロスコープ</h4>
                                 <p class="card-text">VH-6300：キーエンス<br>用途：光学式で3000倍までのデジタル拡大画像を作成</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'"
+                                        value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary"
+                                        onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -367,7 +386,12 @@
                             <div class="card-body">
                                 <h4 class="card-text">卓上電子顕微鏡</h4>
                                 <p class="card-text">TM-3000：日立<br>用途：固体試料の表面形態観察個体試料の表面観察、元素分析ができる</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'"
+                                        value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary"
+                                        onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -383,7 +407,12 @@
                             <div class="card-body">
                                 <h4 class="card-text">文化財赤外紫外線撮影装置</h4>
                                 <p class="card-text">デジタルCMOSカメラ　ORCA-Flash：浜松ホトニクス製<br>用途：可視光の下で見えない隠れた文字判読に使用する</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'"
+                                        value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary"
+                                        onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -399,7 +428,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">ビジネスプロジェクター</h4>
                                 <p class="card-text">EB-Z10005U：EPSON<br>用途：屋外施設へ映像を投影できる</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -408,7 +440,7 @@
                 <!--分析-->
                 <hr class="mt-5">
                 <div style="border-left: #0bd 2px solid;">
-                    <h1  class="ms-3">分析</h1>
+                    <h1 class="ms-3">分析</h1>
                     <p class="mb-5 ms-3">Analysis</p>
                 </div>
 
@@ -424,8 +456,12 @@
                             </svg>
                             <div class="card-body">
                                 <h4 class="card-text">多目的X線解析測定システム</h4>
-                                <p class="card-text">Smart Lab Mini Flex600：リガク<br>用途：無機、有機結晶性物質の同定、状態分析相転移の追跡、薄膜の回折測定<br>　</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <p class="card-text">Smart Lab Mini
+                                    Flex600：リガク<br>用途：無機、有機結晶性物質の同定、状態分析相転移の追跡、薄膜の回折測定<br>　</p>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -441,7 +477,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">X線光電子分析装置</h4>
                                 <p class="card-text">ESCA-3400：島津<br>用途：固体最表面（深さ数nm）の元素分析、化学結合状態を分析する</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -457,7 +496,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">ＩＣＰ発光分光分析装置</h4>
                                 <p class="card-text">iCAP6300：サーモフィッシャーサイエンティフィック<br>用途：各種試料の微量金属の分析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -474,7 +516,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">原子吸光分光分析装置</h4>
                                 <p class="card-text">iCE3300：サーモフィッシャーサイエンティフィック<br>用途：セラミック、金属材料の成分分析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -490,7 +535,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">イオンクロマトグラフ</h4>
                                 <p class="card-text">ダイオネックス ICS1100：サーモフィッシャーサイエンス<br>用途：水溶液中の陽イオン、陰イオンの分離分析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -506,7 +554,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">元素分析装置</h4>
                                 <p class="card-text">2400Ⅱ：ﾊﾟｰｷﾝｴﾙﾏｰ<br>用途：有機化合物の元素分析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -523,7 +574,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">ダブルモノクロ紫外可視分光光度計</h4>
                                 <p class="card-text">V-560DS：日本分光<br>用途：固体試料の微量の無機、有機化合物の定性定量、微量の共役系の検出、定量</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -539,7 +593,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">簡易型フーリエ変換赤外分光光度計</h4>
                                 <p class="card-text">FT/IR-470Plus：日本分光<br>用途：有機化合物の構造解析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -555,7 +612,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">蛍光分光光度計</h4>
                                 <p class="card-text">F-7000：日立<br>用途：極微量の無機成分や、共役系をもつ有機成分の検出、定量</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -571,7 +631,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">マトリックス支援レーザー脱離イオン化飛行時間型 質量分析計</h4>
                                 <p class="card-text">autoflex speed-KS：ブルカー・ダルトニクス<br>用途：固体試料の質量分析、タンパク質・ポリマーの質量分析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -586,8 +649,12 @@
                             </svg>
                             <div class="card-body">
                                 <h4 class="card-text">ｶﾞｽｸﾛﾏﾄｸﾞﾗﾌ質量分析装置</h4>
-                                <p class="card-text">GCMS-QP2010 Ultra ヘッドスペースサンプラー　Turbo Mtrix HS40 ダブルショットパイロライザー　PY-2020iD：島津<br>用途：低沸点、微量試料の分離・同定、熱分解ガスの質量分析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <p class="card-text">GCMS-QP2010 Ultra ヘッドスペースサンプラー　Turbo Mtrix HS40
+                                    ダブルショットパイロライザー　PY-2020iD：島津<br>用途：低沸点、微量試料の分離・同定、熱分解ガスの質量分析</p>
+                                    <div class="all_button">
+                                        <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                        <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -603,7 +670,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">示差走査熱量計</h4>
                                 <p class="card-text">DSC8230：リガク<br>用途：各種材料の加熱時における分解性、反応性の解析。比熱、反応熱、転移熱の定量</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -618,9 +688,13 @@
                             </svg>
                             <div class="card-body">
                                 <h4 class="card-text">TG/DSC/MS/FTIR同時熱分析システム</h4>
-                                <p class="card-text"> STA 449F3 Jupiter BRUKER Optics 顕微赤外分光システム　HYPERION：NETZSCH<br>用途：各種試料の加熱、冷却時の熱的性質および分解ガス成分の定性
+                                <p class="card-text"> STA 449F3 Jupiter BRUKER Optics
+                                    顕微赤外分光システム　HYPERION：NETZSCH<br>用途：各種試料の加熱、冷却時の熱的性質および分解ガス成分の定性
                                     顕微システムによる物質の構造解析</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                    <div class="all_button">
+                                        <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                        <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -636,7 +710,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">円二色性分散計 高速ストップドフローシステム</h4>
                                 <p class="card-text">J-1500：日本分光<br>用途：タンパク質の２次構造解析。キラル分子の測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -652,7 +729,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">蛍光発光マイクロプレートリーダ</h4>
                                 <p class="card-text">SH-9000Lab(F・BF・CL)：コロナ電気<br>用途：吸収、蛍光、時間分解蛍光、発光測定ができる</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -668,7 +748,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">核磁気共鳴装置</h4>
                                 <p class="card-text">AVANCE III 600型：ブルカー・バイオスピン<br>用途：溶液系での分子構造の決定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -678,7 +761,7 @@
 
                 <hr class="mt-5">
                 <div style="border-left: #0bd 2px solid;">
-                    <h1  class="ms-3">計測</h1>
+                    <h1 class="ms-3">計測</h1>
                     <p class="mb-5 ms-3">Measurements</p>
                 </div>
 
@@ -695,7 +778,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">超伝導量子干渉システム</h4>
                                 <p class="card-text">MPMS3：ｶﾝﾀﾑﾃﾞｻﾞｲﾝ<br>用途：酸化物超電導体などの微弱な磁気モーメントの測定<br>　</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -710,8 +796,12 @@
                             </svg>
                             <div class="card-body">
                                 <h4 class="card-text">極低温高磁場物性測定システム</h4>
-                                <p class="card-text">PPHC14：ｶﾝﾀﾑﾃﾞｻﾞｲﾝ<br>用途：1.9Kの極低温から、14ﾃｽﾗの高磁場下での、比熱、電気抵抗、磁気抵抗、磁化率等の物性測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <p class="card-text">
+                                    PPHC14：ｶﾝﾀﾑﾃﾞｻﾞｲﾝ<br>用途：1.9Kの極低温から、14ﾃｽﾗの高磁場下での、比熱、電気抵抗、磁気抵抗、磁化率等の物性測定</p>
+                                    <div class="all_button">
+                                        <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                        <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -727,7 +817,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">走査プローブ顕微鏡</h4>
                                 <p class="card-text">SPM-9700：島津<br>用途：原子間力顕微鏡、表面形状、高低差の測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -744,7 +837,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">自動比表面積/細孔分布測定装置</h4>
                                 <p class="card-text">トライスター3000：島津<br>用途：ガス吸着量から固体の表面積および細孔分布を測定する</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -760,7 +856,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">粘度粘弾性測定装置</h4>
                                 <p class="card-text">RS6000：Thermo Elemental HAAKE<br>用途：液体やゲルの粘度・粘弾性の測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -775,8 +874,13 @@
                             </svg>
                             <div class="card-body">
                                 <h4 class="card-text">LCRメータ（付）ポテンショスタット／ガルバノスタット</h4>
-                                <p class="card-text">LCRメータ　4284A,バイアス電源　42841A/HA-520G：アジレント/北斗電工<br>用途：材料や回路素子の複素インピーダンスの測定。定電圧・定電流電源</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <p class="card-text">
+                                    LCRメータ　4284A,バイアス電源　42841A/HA-520G：アジレント/北斗電工<br>用途：材料や回路素子の複素インピーダンスの測定。定電圧・定電流電源
+                                </p>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -792,8 +896,12 @@
                             </svg>
                             <div class="card-body">
                                 <h4 class="card-text">環境情報測定解析システム</h4>
-                                <p class="card-text">LMS200,291：SICK社 レーザ測定システム<br>用途：回転レーザビームの投光と反射によって、屋内・屋外の静止物体から人間などの動的障害物までの距離や断面形状を非接触で測定する</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <p class="card-text">LMS200,291：SICK社
+                                    レーザ測定システム<br>用途：回転レーザビームの投光と反射によって、屋内・屋外の静止物体から人間などの動的障害物までの距離や断面形状を非接触で測定する</p>
+                                    <div class="all_button">
+                                        <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                        <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -809,7 +917,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">電離箱式サーベイメータ</h4>
                                 <p class="card-text">ICS-311：ｱﾛｶ<br>用途：Ｘ線、β線の線量測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -825,7 +936,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">放射線測定器</h4>
                                 <p class="card-text">GammaA2700：ケニス<br>用途：γ線スペクトル測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -841,7 +955,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">ウルトラミクロ天秤</h4>
                                 <p class="card-text">MSA2 7S-000-DM：ザルトリウス<br>用途：微量な試料の重量を測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -857,7 +974,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">赤外線サーモグラフカメラ</h4>
                                 <p class="card-text">R300SR-H：日本アビオニクス<br>用途：物質の表面温度を測定</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -872,8 +992,12 @@
                             </svg>
                             <div class="card-body">
                                 <h4 class="card-text">レーザー線幅測定器</h4>
-                                <p class="card-text">Brimrose　フジクラ　RIGOL　New Focus　大崎電気<br>用途：光源レーザー光のスペクトル線幅を測定</p> <!--？-->
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <p class="card-text">Brimrose　フジクラ　RIGOL　New Focus　大崎電気<br>用途：光源レーザー光のスペクトル線幅を測定</p>
+                                <!--？-->
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -883,7 +1007,7 @@
 
                 <hr class="mt-5">
                 <div style="border-left: #0bd 2px solid;">
-                    <h1  class="ms-3">調製</h1>
+                    <h1 class="ms-3">調製</h1>
                     <p class="mb-5 ms-3">Manufacture</p>
                 </div>
 
@@ -900,7 +1024,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">イオンコーター</h4>
                                 <p class="card-text">IB-2：ｴｲｺｰｴﾝｼﾞﾆｱﾘﾝｸﾞ<br>用途：試料表面に金をコーティングする<br>　</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -916,7 +1043,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">マイクロカッティングマシン</h4>
                                 <p class="card-text">BS-3000N-A：ＥＸＡＫＴ社<br>用途：セラミックスなどの硬いものや、光顕、電顕試料を薄く切り出す</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -932,7 +1062,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">高速大容量冷却遠心機</h4>
                                 <p class="card-text">7780　Ⅱ：KUBOTA<br>用途：生物試料などの遠心分離</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -949,7 +1082,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">キュリーポイントインジェクタ</h4>
                                 <p class="card-text">JCI-22：日本分析分析工業<br>用途：固体・液体試料の熱分解、気体成分の加熱濃縮</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -965,7 +1101,10 @@
                             <div class="card-body">
                                 <h4 class="card-text">粉体大気圧プラズマ処理装置</h4>
                                 <p class="card-text">Plamino：九州計測器<br>用途：粉体試料の表面処理を均一に行う</p>
-                                <a href="#" class="d-grid gap-2"><button type="button" class="btn btn-primary">> 詳細を見る</button></a>
+                                <div class="all_button">
+                                    <input type="button" class="btn btn-outline-primary" onclick="location.href='#'" value="> 予約">
+                                    <input type="button" class="btn btn-outline-secondary" onclick="location.href='#'" value="> 詳細">
+                                </div>
                             </div>
                         </div>
                     </div>
