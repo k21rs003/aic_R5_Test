@@ -1,0 +1,7 @@
+.all_button{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 49%;
+}
